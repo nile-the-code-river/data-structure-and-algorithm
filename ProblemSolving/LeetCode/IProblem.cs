@@ -12,6 +12,7 @@ namespace LeetCode
         string Name { get; }
         string Link { get; }
         DateTime SolvedDate { get; }
+
         // Write codes to test each problem
         static void TestCode() { }
     }

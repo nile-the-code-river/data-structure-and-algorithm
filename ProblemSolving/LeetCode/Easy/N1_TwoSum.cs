@@ -9,8 +9,11 @@ namespace LeetCode.Easy
     internal class N1_TwoSum : IProblem
     {
         public int Index => 1;
+
         public string Name => "TwoSum";
+
         public string Link => "https://leetcode.com/problems/two-sum/";
+
         public DateTime SolvedDate => new DateTime(2023, 08, 30);
 
         public static void TestCode()
