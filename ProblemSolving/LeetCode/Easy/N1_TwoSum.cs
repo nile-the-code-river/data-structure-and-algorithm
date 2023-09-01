@@ -10,13 +10,18 @@ namespace LeetCode.Easy
     {
         public int Index => 1;
 
-        public string Name => "TwoSum";
+        public string Name => "Two Sum";
 
         public string Link => "https://leetcode.com/problems/two-sum/";
 
         public DateTime SolvedDate => new DateTime(2023, 08, 30);
 
-        public static void TestCode()
+        public void BestCode()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TestCode()
         {
             N1_TwoSum n1 = new N1_TwoSum();
             int[] arr = { 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1 };

@@ -14,6 +14,8 @@ namespace LeetCode
         DateTime SolvedDate { get; }
 
         // Write codes to test each problem
-        static void TestCode() { }
+        // static abstract void TestCode(); << Make it possible for N1_TwoSum.TestCode();
+        void TestCode();
+        void BestCode(); // define parameters INSIDE the method
     }
 }
