@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeetCode.Easy
+﻿namespace LeetCode.Easy
 {
     internal class N14_LongestCommonPrefix : IProblem
     {
@@ -73,44 +66,20 @@ namespace LeetCode.Easy
         {
             string common = strs[0];
 
-            //Word
-            for (int i = 0; i < strs.Length; i++)
-            {
-                string compareWord = strs[i];
-
-                if (common.Length > compareWord.Length) common = common.Substring(0, compareWord.Length);
-
-                //Letter
-                for (int compareAt = 0; compareAt < compareWord.Length; compareAt++)
-                {
-                    if (!common[compareAt].Equals(compareWord[compareAt]))
-                    {
-                        char mismatchingLetter = common[compareAt];
-                        common = common.Split(mismatchingLetter).First();
-                        break;
-                    }
-
-                }
-
-                if (common.Equals(string.Empty))
-                    return common;
-                //common = common.Union(strs[i]).ToArray();
+            //common = common.Union(strs[i]).ToArray();
 
 
-                //result.IndexOfAny();
-                // result.SelectMany();
-                // result.ToLookup();
-                // result.ToDictionary();
-                // result.ToHashSet();
+            //result.IndexOfAny();
+            // result.SelectMany();
+            // result.ToLookup();
+            // result.ToDictionary();
+            // result.ToHashSet();
 
-                // https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=net-7.0
-                // https://www.geeksforgeeks.org/hashset-in-c-sharp-with-examples/
-                // https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
-                // https://stackoverflow.com/questions/9248714/c-sharp-union-of-strings
-                // https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.union?view=net-7.0
-
-                // strs[i]
-            }
+            // https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=net-7.0
+            // https://www.geeksforgeeks.org/hashset-in-c-sharp-with-examples/
+            // https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
+            // https://stackoverflow.com/questions/9248714/c-sharp-union-of-strings
+            // https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.union?view=net-7.0
 
             return common.ToString();
         }
