@@ -13,8 +13,11 @@ namespace LeetCode
             //N13_RomanToInteger n13 = new();
             //n13.TestCode();
 
-            N14_LongestCommonPrefix n14 = new();
-            n14.TestCode();
+            //N14_LongestCommonPrefix n14 = new();
+            //n14.TestCode();
+
+            N20_ValidParentheses n20 = new();
+            n20.TestCode();
         }
     }
 }

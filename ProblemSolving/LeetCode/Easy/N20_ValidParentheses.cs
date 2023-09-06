@@ -16,42 +16,63 @@ namespace LeetCode.Easy
 
         public DateTime SolvedDate => new DateTime(2023,09,04);
 
-        public void BestCode()
-        {
-            throw new NotImplementedException();
-        }
-
         public void TestCode()
         {
-            ValidParenthesis("[]{]()");
+            Console.WriteLine(ValidParenthesis("{[]}"));
+            Console.WriteLine(ValidParenthesis("]"));
+            Console.WriteLine(ValidParenthesis("[]{}()"));
+        }
+
+        public bool BestCode(string s)
+        {
+            Stack<char> expected = new();
+
+            foreach (char c in s)
+            {
+                // if is faster than switch in this case
+                if (c.Equals('('))
+                {
+                    expected.Push(')');
+                    continue;
+                }
+                else if (c.Equals('{'))
+                {
+                    expected.Push('}');
+                    continue;
+                }
+                else if (c.Equals('['))
+                {
+                    expected.Push(']');
+                    continue;
+                }
+
+                if (expected.Count == 0 || !expected.Pop().Equals(c)) // using Pop() is important. not Peek()
+                    return false;
+            }
+
+            return expected.Count == 0;
         }
 
         public bool ValidParenthesis(string s)
         {
-            char[] startParen = { '(', '{', '['};
-            char[] endss = { ')', '}', ']'};
+            char[] start    = { '(', '{', '['};
+            char[] end      = { ')', '}', ']'};
 
+            Stack<char> unwrappedPars = new();
 
-            string start = "{[(";
-            string end = "}])";
-            char cBefore = '\0';
             foreach (char c in s)
             {
-                //Array.Find(startParen)
+                bool isStartChar = Array.Exists(start, x => x.Equals(c));
 
-
-                //if(end.Any(x => x.Equals(cBefore)) && Array.Find(startParen, x => x.Equals(cBefore)))
-                //{
-
-                //}
-
-                if (end.Any(x => x.Equals(cBefore)) || cBefore.Equals('\0'))
-                {
-                    cBefore = c;
-                }
+                if (isStartChar || (unwrappedPars.Count.Equals(0) && isStartChar))
+                    unwrappedPars.Push(c);
+                else if (!unwrappedPars.Count.Equals(0) && c.Equals(end[Array.IndexOf(start, unwrappedPars.Peek())]))
+                    unwrappedPars.Pop();
+                else
+                    return false;
             }
 
-            return true;
+            return unwrappedPars.Count.Equals(0);
         }
     }
 }
