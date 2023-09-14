@@ -4,6 +4,7 @@
     {
         int Index { get; }
         string Name { get; }
+        string Description { get; }
         string Link { get; }
         DateTime SolvedDate { get; }
 

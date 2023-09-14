@@ -16,8 +16,11 @@ namespace LeetCode
             //N14_LongestCommonPrefix n14 = new();
             //n14.TestCode();
 
-            N20_ValidParentheses n20 = new();
-            n20.TestCode();
+            //N20_ValidParentheses n20 = new();
+            //n20.TestCode();
+
+            N21_MergeTwoSortedLists n21 = new();
+            n21.TestCode();
         }
     }
 }

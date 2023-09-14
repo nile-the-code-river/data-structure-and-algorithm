@@ -12,6 +12,8 @@ namespace LeetCode.Easy
 
         public string Name => "Valid Parentheses";
 
+        public string Description => "Given a string of parentheses, return boolean that tells wheather or not the parenthese are placed to enclose their corresponding parentheses.";
+
         public string Link => "https://leetcode.com/problems/valid-parentheses/";
 
         public DateTime SolvedDate => new DateTime(2023,09,04);

@@ -6,6 +6,8 @@
 
         public string Name => "Longest Common Prefix";
 
+        public string Description => "Given an array of strings, return the longest common prefix of them.";
+
         public string Link => "https://leetcode.com/problems/longest-common-prefix/";
 
         public DateTime SolvedDate => new(2023, 09, 01);

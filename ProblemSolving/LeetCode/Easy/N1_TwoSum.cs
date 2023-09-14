@@ -6,6 +6,8 @@
 
         public string Name => "Two Sum";
 
+        public string Description => "Given an array of numbers and a number(target), return indexes of the array whose values at the indexes add up to the target number.";
+
         public string Link => "https://leetcode.com/problems/two-sum/";
 
         public DateTime SolvedDate => new DateTime(2023, 08, 30);

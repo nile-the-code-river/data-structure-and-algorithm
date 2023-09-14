@@ -23,6 +23,8 @@
 
         public string Name => "Roman To Integer";
 
+        public string Description => "Given a string of Roman Number, convert it to regular number (Integer)";
+
         public string Link => "https://leetcode.com/problems/roman-to-integer/";
 
         public DateTime SolvedDate => new (2023, 08, 31);
