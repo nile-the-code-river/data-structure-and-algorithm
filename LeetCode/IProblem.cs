@@ -11,6 +11,6 @@
         // Write codes to test each problem
         // static abstract void TestCode(); << Make it possible for N1_TwoSum.TestCode();
         void TestCode();
-        //void BestCode(); // define parameters INSIDE the method
+        //void BestCode(); // define parameters INSIDE the method 
     }
 }
