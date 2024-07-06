@@ -1,4 +1,5 @@
 ﻿using LeetCode.Easy;
+using LeetCode.NonLeetcode;
 
 namespace LeetCode
 {
@@ -22,8 +23,11 @@ namespace LeetCode
             //N21_MergeTwoSortedLists n21 = new();
             //n21.TestCode();
 
-            N35_SearchInsertPosition n35_SearchInsertPosition = new N35_SearchInsertPosition();
-            n35_SearchInsertPosition.TestCode();
+            N0_FirstRecurringCharacter frc = new();
+            frc.TestCode();
+
+            //N35_SearchInsertPosition n35_SearchInsertPosition = new N35_SearchInsertPosition();
+            //n35_SearchInsertPosition.TestCode();
         }
     }
 }
