@@ -23,8 +23,11 @@ namespace LeetCode
             //N21_MergeTwoSortedLists n21 = new();
             //n21.TestCode();
 
-            N0_FirstRecurringCharacter frc = new();
-            frc.TestCode();
+            //N0_FirstRecurringCharacter frc = new();
+            //frc.TestCode();
+
+            N94_BinaryTreeInorderTraversal btit = new N94_BinaryTreeInorderTraversal();
+            btit.TestCode();
 
             //N35_SearchInsertPosition n35_SearchInsertPosition = new N35_SearchInsertPosition();
             //n35_SearchInsertPosition.TestCode();
